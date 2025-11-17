@@ -1,0 +1,122 @@
+# 双策略PPO配置文件
+# 可以为不同环境定制配置
+
+# 默认配置
+default:
+  # 训练参数
+  max_episodes: 300
+  max_steps: 500
+  update_frequency: 2048
+  eval_frequency: 10
+  save_frequency: 50
+  batch_size: 64
+  n_epochs: 10
+  
+  # 算法参数
+  lr: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_epsilon: 0.2
+  value_coef: 0.5
+  entropy_coef: 0.01
+  intrinsic_coef: 0.1
+  kl_coef: 0.01
+  kl_threshold: 0.3
+  update_opponent_interval: 10
+  
+  # 网络参数
+  hidden_dim: 256
+  
+  # 其他
+  seed: 42
+  device: 'auto'  # 'auto', 'cuda', 'cpu'
+
+# CartPole环境配置
+CartPole-v1:
+  max_episodes: 300
+  max_steps: 500
+  hidden_dim: 128
+  intrinsic_coef: 0.1
+  kl_coef: 0.01
+  kl_threshold: 0.3
+
+# Pendulum环境配置（连续控制，易震荡）
+Pendulum-v1:
+  max_episodes: 300
+  max_steps: 200
+  hidden_dim: 256
+  intrinsic_coef: 0.05  # 较小的内在奖励
+  kl_coef: 0.02         # 更强的稳定性约束
+  kl_threshold: 0.2     # 更严格的KL阈值
+
+# LunarLander环境配置（稀疏奖励）
+LunarLander-v2:
+  max_episodes: 500
+  max_steps: 1000
+  hidden_dim: 256
+  intrinsic_coef: 0.2   # 较大的内在奖励促进探索
+  kl_coef: 0.01
+  kl_threshold: 0.3
+  update_opponent_interval: 10
+
+# Acrobot环境配置（稀疏奖励）
+Acrobot-v1:
+  max_episodes: 400
+  max_steps: 500
+  hidden_dim: 256
+  intrinsic_coef: 0.15
+  kl_coef: 0.01
+  kl_threshold: 0.3
+
+# MountainCarContinuous环境配置（极度稀疏奖励）
+MountainCarContinuous-v0:
+  max_episodes: 400
+  max_steps: 999
+  hidden_dim: 256
+  intrinsic_coef: 0.3   # 更强的探索激励
+  kl_coef: 0.015
+  kl_threshold: 0.25
+  update_opponent_interval: 10
+
+# BipedalWalker环境配置（连续控制，复杂）
+BipedalWalker-v3:
+  max_episodes: 1000
+  max_steps: 1600
+  hidden_dim: 512
+  intrinsic_coef: 0.08
+  kl_coef: 0.015
+  kl_threshold: 0.25
+  lr: 0.0001
+  update_frequency: 4096
+
+# HalfCheetah环境配置（MuJoCo，高维连续控制）
+HalfCheetah-v4:
+  max_episodes: 2000
+  max_steps: 1000
+  hidden_dim: 512
+  intrinsic_coef: 0.05
+  kl_coef: 0.02
+  kl_threshold: 0.2
+  lr: 0.0001
+  gamma: 0.995
+  update_frequency: 4096
+
+# 超参数调优建议
+hyperparameter_tuning_guide:
+  intrinsic_coef:
+    sparse_reward: [0.2, 0.3]      # 稀疏奖励环境
+    dense_reward: [0.05, 0.1]      # 密集奖励环境
+    continuous_control: [0.03, 0.08]  # 连续控制环境
+  
+  kl_coef:
+    unstable_env: [0.02, 0.03]     # 易震荡环境
+    stable_env: [0.005, 0.01]      # 稳定环境
+  
+  kl_threshold:
+    fast_exploration: [0.3, 0.5]   # 需要快速探索
+    stable_training: [0.15, 0.25]  # 需要稳定训练
+  
+  update_opponent_interval:
+    fast_adaptation: [5, 10]       # 快速适应
+    long_stability: [15, 20]       # 保持长期稳定性
+
