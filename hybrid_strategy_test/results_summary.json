@@ -1,0 +1,109 @@
+{
+  "Standard PPO": {
+    "final_100": -152.98,
+    "best_eval": -110.4,
+    "config": {
+      "max_episodes": 600,
+      "update_frequency": 2048,
+      "eval_frequency": 50,
+      "log_frequency": 50,
+      "hidden_dim": 256,
+      "lr": 0.0003,
+      "gamma": 0.99,
+      "intrinsic_coef": 0.0,
+      "kl_coef": 0.0,
+      "entropy_coef": 0.01
+    }
+  },
+  "Original Dual PPO": {
+    "final_100": -134.48,
+    "best_eval": -104.0,
+    "config": {
+      "max_episodes": 600,
+      "update_frequency": 2048,
+      "eval_frequency": 50,
+      "log_frequency": 50,
+      "hidden_dim": 256,
+      "lr": 0.0001,
+      "intrinsic_coef": 0.05,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.005,
+      "gamma": 0.99
+    }
+  },
+  "Improved Dual PPO": {
+    "final_100": -126.36,
+    "best_eval": -120.4,
+    "config": {
+      "max_episodes": 600,
+      "update_frequency": 2048,
+      "eval_frequency": 50,
+      "log_frequency": 50,
+      "hidden_dim": 256,
+      "lr": 0.0003,
+      "intrinsic_coef": 0.02,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.02,
+      "tau": 0.02,
+      "kl_base": 0.1,
+      "gamma": 0.995
+    }
+  },
+  "Hybrid Dual PPO (Switch@200)": {
+    "final_100": -148.06,
+    "best_eval": -122.6,
+    "config": {
+      "max_episodes": 600,
+      "update_frequency": 2048,
+      "eval_frequency": 50,
+      "log_frequency": 50,
+      "hidden_dim": 256,
+      "lr": 0.0001,
+      "intrinsic_coef": 0.05,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.005,
+      "gamma": 0.99,
+      "tau": 0.02,
+      "kl_base": 0.1,
+      "switch_episode": 200
+    }
+  },
+  "Hybrid Dual PPO (Switch@300)": {
+    "final_100": -130.64,
+    "best_eval": -110.6,
+    "config": {
+      "max_episodes": 600,
+      "update_frequency": 2048,
+      "eval_frequency": 50,
+      "log_frequency": 50,
+      "hidden_dim": 256,
+      "lr": 0.0001,
+      "intrinsic_coef": 0.05,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.005,
+      "gamma": 0.99,
+      "tau": 0.02,
+      "kl_base": 0.1,
+      "switch_episode": 300
+    }
+  },
+  "Hybrid Dual PPO (Switch@400)": {
+    "final_100": -130.13,
+    "best_eval": -102.6,
+    "config": {
+      "max_episodes": 600,
+      "update_frequency": 2048,
+      "eval_frequency": 50,
+      "log_frequency": 50,
+      "hidden_dim": 256,
+      "lr": 0.0001,
+      "intrinsic_coef": 0.05,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.005,
+      "gamma": 0.99,
+      "tau": 0.02,
+      "kl_base": 0.1,
+      "switch_episode": 400
+    }
+  }
+}
