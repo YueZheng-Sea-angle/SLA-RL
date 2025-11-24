@@ -1,0 +1,134 @@
+[
+  {
+    "config": {
+      "lr": 0.0005,
+      "intrinsic_coef": 0.05,
+      "kl_coef": 0.002,
+      "entropy_coef": 0.01,
+      "gamma": 0.99
+    },
+    "final_100_avg": -116.87,
+    "best_eval": -105.2
+  },
+  {
+    "config": {
+      "lr": 0.0001,
+      "intrinsic_coef": 0.1,
+      "kl_coef": 0.001,
+      "entropy_coef": 0.005,
+      "gamma": 0.99
+    },
+    "final_100_avg": -125.85,
+    "best_eval": -109.6
+  },
+  {
+    "config": {
+      "lr": 0.0003,
+      "intrinsic_coef": 0.02,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.02,
+      "gamma": 0.995
+    },
+    "final_100_avg": -144.78,
+    "best_eval": -131.2
+  },
+  {
+    "config": {
+      "lr": 0.0005,
+      "intrinsic_coef": 0.05,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.005,
+      "gamma": 0.99
+    },
+    "final_100_avg": -132.03,
+    "best_eval": -132.0
+  },
+  {
+    "config": {
+      "lr": 0.0005,
+      "intrinsic_coef": 0.05,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.005,
+      "gamma": 0.995
+    },
+    "final_100_avg": -125.81,
+    "best_eval": -118.6
+  },
+  {
+    "config": {
+      "lr": 0.0005,
+      "intrinsic_coef": 0.1,
+      "kl_coef": 0.001,
+      "entropy_coef": 0.005,
+      "gamma": 0.995
+    },
+    "final_100_avg": -148.0,
+    "best_eval": -145.2
+  },
+  {
+    "config": {
+      "lr": 0.0003,
+      "intrinsic_coef": 0.01,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.01,
+      "gamma": 0.99
+    },
+    "final_100_avg": -143.3,
+    "best_eval": -143.8
+  },
+  {
+    "config": {
+      "lr": 0.0003,
+      "intrinsic_coef": 0.01,
+      "kl_coef": 0.002,
+      "entropy_coef": 0.01,
+      "gamma": 0.99
+    },
+    "final_100_avg": -137.23,
+    "best_eval": -137.6
+  },
+  {
+    "config": {
+      "lr": 0.0005,
+      "intrinsic_coef": 0.1,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.01,
+      "gamma": 0.99
+    },
+    "final_100_avg": -132.3,
+    "best_eval": -131.4
+  },
+  {
+    "config": {
+      "lr": 0.0005,
+      "intrinsic_coef": 0.1,
+      "kl_coef": 0.002,
+      "entropy_coef": 0.005,
+      "gamma": 0.995
+    },
+    "final_100_avg": -144.22,
+    "best_eval": -138.2
+  },
+  {
+    "config": {
+      "lr": 0.0001,
+      "intrinsic_coef": 0.02,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.01,
+      "gamma": 0.99
+    },
+    "final_100_avg": -143.23,
+    "best_eval": -93.0
+  },
+  {
+    "config": {
+      "lr": 0.0001,
+      "intrinsic_coef": 0.05,
+      "kl_coef": 0.0005,
+      "entropy_coef": 0.005,
+      "gamma": 0.99
+    },
+    "final_100_avg": -109.03,
+    "best_eval": -100.8
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "Standard PPO": {
+    "final_100_avg": -132.54,
+    "best_eval": -132.4,
+    "config": {
+      "max_episodes": 600,
+      "update_frequency": 2048,
+      "eval_frequency": 50,
+      "log_frequency": 50,
+      "hidden_dim": 256,
+      "lr": 0.0003,
+      "gamma": 0.99,
+      "intrinsic_coef": 0.0,
+      "kl_coef": 0.0,
+      "entropy_coef": 0.01
+    }
+  }
+}

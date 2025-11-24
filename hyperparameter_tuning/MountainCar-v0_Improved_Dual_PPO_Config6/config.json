@@ -1,0 +1,14 @@
+{
+  "max_episodes": 600,
+  "update_frequency": 2048,
+  "eval_frequency": 50,
+  "log_frequency": 50,
+  "hidden_dim": 256,
+  "lr": 0.0003,
+  "intrinsic_coef": 0.01,
+  "kl_coef": 0.0005,
+  "entropy_coef": 0.01,
+  "tau": 0.02,
+  "kl_base": 0.15,
+  "gamma": 0.995
+}

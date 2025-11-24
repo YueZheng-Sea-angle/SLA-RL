@@ -1,0 +1,310 @@
+{
+  "Standard PPO": {
+    "config": {
+      "max_episodes": 600,
+      "update_frequency": 2048,
+      "eval_frequency": 50,
+      "log_frequency": 50,
+      "hidden_dim": 256,
+      "lr": 0.0003,
+      "gamma": 0.99,
+      "intrinsic_coef": 0.0,
+      "kl_coef": 0.0,
+      "entropy_coef": 0.01
+    },
+    "final_100_avg": -132.54,
+    "best_eval": -132.4
+  },
+  "Original Dual PPO": [
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.05,
+        "kl_coef": 0.002,
+        "entropy_coef": 0.01,
+        "gamma": 0.99
+      },
+      "final_100_avg": -116.87,
+      "best_eval": -105.2
+    },
+    {
+      "config": {
+        "lr": 0.0001,
+        "intrinsic_coef": 0.1,
+        "kl_coef": 0.001,
+        "entropy_coef": 0.005,
+        "gamma": 0.99
+      },
+      "final_100_avg": -125.85,
+      "best_eval": -109.6
+    },
+    {
+      "config": {
+        "lr": 0.0003,
+        "intrinsic_coef": 0.02,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.02,
+        "gamma": 0.995
+      },
+      "final_100_avg": -144.78,
+      "best_eval": -131.2
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.05,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.005,
+        "gamma": 0.99
+      },
+      "final_100_avg": -132.03,
+      "best_eval": -132.0
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.05,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.005,
+        "gamma": 0.995
+      },
+      "final_100_avg": -125.81,
+      "best_eval": -118.6
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.1,
+        "kl_coef": 0.001,
+        "entropy_coef": 0.005,
+        "gamma": 0.995
+      },
+      "final_100_avg": -148.0,
+      "best_eval": -145.2
+    },
+    {
+      "config": {
+        "lr": 0.0003,
+        "intrinsic_coef": 0.01,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.01,
+        "gamma": 0.99
+      },
+      "final_100_avg": -143.3,
+      "best_eval": -143.8
+    },
+    {
+      "config": {
+        "lr": 0.0003,
+        "intrinsic_coef": 0.01,
+        "kl_coef": 0.002,
+        "entropy_coef": 0.01,
+        "gamma": 0.99
+      },
+      "final_100_avg": -137.23,
+      "best_eval": -137.6
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.1,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.01,
+        "gamma": 0.99
+      },
+      "final_100_avg": -132.3,
+      "best_eval": -131.4
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.1,
+        "kl_coef": 0.002,
+        "entropy_coef": 0.005,
+        "gamma": 0.995
+      },
+      "final_100_avg": -144.22,
+      "best_eval": -138.2
+    },
+    {
+      "config": {
+        "lr": 0.0001,
+        "intrinsic_coef": 0.02,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.01,
+        "gamma": 0.99
+      },
+      "final_100_avg": -143.23,
+      "best_eval": -93.0
+    },
+    {
+      "config": {
+        "lr": 0.0001,
+        "intrinsic_coef": 0.05,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.005,
+        "gamma": 0.99
+      },
+      "final_100_avg": -109.03,
+      "best_eval": -100.8
+    }
+  ],
+  "Improved Dual PPO": [
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.01,
+        "kl_coef": 0.001,
+        "entropy_coef": 0.01,
+        "tau": 0.005,
+        "kl_base": 0.1,
+        "gamma": 0.995
+      },
+      "final_100_avg": -138.41,
+      "best_eval": -124.0
+    },
+    {
+      "config": {
+        "lr": 0.0003,
+        "intrinsic_coef": 0.02,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.02,
+        "tau": 0.02,
+        "kl_base": 0.1,
+        "gamma": 0.995
+      },
+      "final_100_avg": -125.21,
+      "best_eval": -122.2
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.01,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.005,
+        "tau": 0.01,
+        "kl_base": 0.1,
+        "gamma": 0.99
+      },
+      "final_100_avg": -131.14,
+      "best_eval": -131.2
+    },
+    {
+      "config": {
+        "lr": 0.0001,
+        "intrinsic_coef": 0.1,
+        "kl_coef": 0.002,
+        "entropy_coef": 0.01,
+        "tau": 0.005,
+        "kl_base": 0.1,
+        "gamma": 0.995
+      },
+      "final_100_avg": -130.92,
+      "best_eval": -102.0
+    },
+    {
+      "config": {
+        "lr": 0.0001,
+        "intrinsic_coef": 0.01,
+        "kl_coef": 0.001,
+        "entropy_coef": 0.02,
+        "tau": 0.005,
+        "kl_base": 0.15,
+        "gamma": 0.99
+      },
+      "final_100_avg": -138.91,
+      "best_eval": -109.6
+    },
+    {
+      "config": {
+        "lr": 0.0003,
+        "intrinsic_coef": 0.01,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.01,
+        "tau": 0.02,
+        "kl_base": 0.15,
+        "gamma": 0.995
+      },
+      "final_100_avg": -135.89,
+      "best_eval": -127.2
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.05,
+        "kl_coef": 0.001,
+        "entropy_coef": 0.005,
+        "tau": 0.005,
+        "kl_base": 0.1,
+        "gamma": 0.995
+      },
+      "final_100_avg": -143.69,
+      "best_eval": -125.6
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.02,
+        "kl_coef": 0.001,
+        "entropy_coef": 0.01,
+        "tau": 0.02,
+        "kl_base": 0.05,
+        "gamma": 0.995
+      },
+      "final_100_avg": -130.59,
+      "best_eval": -130.6
+    },
+    {
+      "config": {
+        "lr": 0.0001,
+        "intrinsic_coef": 0.02,
+        "kl_coef": 0.001,
+        "entropy_coef": 0.01,
+        "tau": 0.02,
+        "kl_base": 0.15,
+        "gamma": 0.995
+      },
+      "final_100_avg": -135.95,
+      "best_eval": -103.2
+    },
+    {
+      "config": {
+        "lr": 0.0003,
+        "intrinsic_coef": 0.1,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.02,
+        "tau": 0.005,
+        "kl_base": 0.1,
+        "gamma": 0.99
+      },
+      "final_100_avg": -137.08,
+      "best_eval": -119.2
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.05,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.02,
+        "tau": 0.02,
+        "kl_base": 0.15,
+        "gamma": 0.99
+      },
+      "final_100_avg": -142.87,
+      "best_eval": -139.4
+    },
+    {
+      "config": {
+        "lr": 0.0005,
+        "intrinsic_coef": 0.05,
+        "kl_coef": 0.0005,
+        "entropy_coef": 0.02,
+        "tau": 0.005,
+        "kl_base": 0.05,
+        "gamma": 0.995
+      },
+      "final_100_avg": -129.24,
+      "best_eval": -108.6
+    }
+  ]
+}
