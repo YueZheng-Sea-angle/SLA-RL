@@ -1,0 +1,8 @@
+# 元认知框架依赖项
+# 这些依赖项应该已经在主项目的requirements.txt中
+
+torch>=1.9.0
+numpy>=1.19.0
+gym>=0.21.0
+matplotlib>=3.3.0
+
